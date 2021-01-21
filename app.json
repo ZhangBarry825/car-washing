@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/mine/mine",
+    "pages/production/production",
+    "pages/coupon/coupon"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "洗车小程序",
+    "navigationBarTextStyle":"black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#3575FF",
+    "list": [
+      {
+        "iconPath": "./static/images/m10.png",
+        "selectedIconPath": "./static/images/m11.png",
+        "pagePath": "pages/home/home",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./static/images/m20.png",
+        "selectedIconPath": "./static/images/m21.png",
+        "pagePath": "pages/production/production",
+        "text": "作品"
+      },
+      {
+        "iconPath": "./static/images/m30.png",
+        "selectedIconPath": "./static/images/m31.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

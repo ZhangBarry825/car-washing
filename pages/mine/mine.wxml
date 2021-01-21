@@ -1,0 +1,81 @@
+<!--pages/mine/mine.wxml-->
+<view class="page">
+    <view class="back-color"></view>
+    <view class="info">
+        <view class="left">
+            <view class="line1">136****2546</view>
+            <view class="line2">你的爱车我来守护～</view>
+        </view>
+        <view class="right">
+            <van-image
+                    width="160rpx"
+                    height="160rpx"
+                    fit="cover"
+                    round
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+            />
+        </view>
+    </view>
+    <view class="order">
+        <view class="box">
+            <view class="box-title">我的订单</view>
+            <view class="box-items">
+                <view class="item">
+                    <image mode="aspectFit" src="../../static/images/o1.png"></image>
+                    <text>全部订单</text>
+                </view>
+                <view class="item">
+                    <image mode="aspectFit" src="../../static/images/o2.png"></image>
+                    <text>待付款</text>
+                </view>
+                <view class="item">
+                    <image mode="aspectFit" src="../../static/images/o3.png"></image>
+                    <text>已付款</text>
+                </view>
+            </view>
+
+        </view>
+    </view>
+    <view class="out-box">
+        <view class="white" bind:tap="goTo" data-path="/pages/coupon/coupon">
+            <view class="line1">
+                <image src="../../static/images/w1.png"></image>
+                <text>优惠券</text>
+            </view>
+            <view class="line2">
+                <text>0</text>个未使用
+            </view>
+        </view>
+        <view class="white">
+            <view class="line1">
+                <image src="../../static/images/w2.png"></image>
+                <text>会员卡</text>
+            </view>
+            <view class="line2">
+                余额、充值
+            </view>
+        </view>
+    </view>
+    <view class="menu-items">
+        <view class="items">
+            <view class="item">
+                <view class="left">
+                    <image mode="aspectFit" src="../../static/images/m1.png"></image>
+                    <text>售后服务</text>
+                </view>
+                <view class="right">
+                    <image mode="aspectFit" src="../../static/images/more.png"></image>
+                </view>
+            </view>
+            <view class="item">
+                <view class="left">
+                    <image mode="aspectFit" src="../../static/images/m2.png"></image>
+                    <text>个人设置</text>
+                </view>
+                <view class="right">
+                    <image mode="aspectFit" src="../../static/images/more.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

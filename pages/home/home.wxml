@@ -1,0 +1,99 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+    <van-search shape="round" value="{{ searchKey }}" placeholder="全场购保养送洗车券" />
+    <view class="swipe-box">
+        <view class="swipe">
+            <swiper indicator-dots="{{swiperConfig.indicatorDots}}"
+                    indicator-color="rgba(255,255,255,.5)"
+                    indicator-active-color="#FFFFFF"
+                    autoplay="{{swiperConfig.autoplay}}" interval="{{swiperConfig.interval}}" duration="{{swiperConfig.duration}}">
+                <block wx:for="{{bannerList}}" wx:key="id">
+                    <swiper-item>
+                        <view class="swiper-item {{index}}">
+                            <van-image
+                                    width="100%"
+                                    height="100%"
+                                    fit="cover"
+                                    src="{{item.src}}"/>
+                        </view>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <view class="announce-box">
+        <view class="left">
+            <image src="../../static/images/announce.png"></image>
+            <view class="border"></view>
+            <view class="title">刹车盘要多久换一次？有哪些判断依据...</view>
+        </view>
+        <view class="right">
+            <image src="../../static/images/more.png"></image>
+        </view>
+    </view>
+    <view class="menus">
+        <view class="item">
+            <van-image
+                    width="100rpx"
+                    height="100rpx"
+                    fit="contain"
+                    src="/static/images/btn1.png"/>
+            <text>洗车预约</text>
+        </view>
+        <view class="item">
+            <van-image
+                    width="100rpx"
+                    height="100rpx"
+                    fit="contain"
+                    src="/static/images/btn2.png"/>
+            <text>保养预约</text>
+        </view>
+        <view class="item">
+            <van-image
+                    width="100rpx"
+                    height="100rpx"
+                    fit="contain"
+                    src="/static/images/btn3.png"/>
+            <text>改装预约</text>
+        </view>
+        <view class="item">
+            <van-image
+                    width="100rpx"
+                    height="100rpx"
+                    fit="contain"
+                    src="/static/images/btn4.png"/>
+            <text>车衣</text>
+        </view>
+    </view>
+    <view class="area-title">
+        <view class="left">精选作品</view>
+        <view class="right">
+            <text>查看更多</text>
+            <image src="../../static/images/more.png"></image>
+        </view>
+    </view>
+    <view class="production-items">
+        <view class="item" wx:for="{{5}}" wx:key="id">
+            <image src="../../static/images/play.png"></image>
+        </view>
+    </view>
+    <view class="area-title">
+        <view class="left">商家特惠</view>
+        <view class="right">
+            <text></text>
+        </view>
+    </view>
+    <view class="cheap">
+        <image mode="aspectFit" class="back-image" src="../../static/images/vip-back.png"></image>
+        <view class="box">
+            <view class="left">
+                <view class="line1">会员卡</view>
+                <view class="line2">充值金额越高，折扣越大，全场通用</view>
+            </view>
+            <view class="right">
+                <view class="line1">充值</view>
+                <view class="line2">235人已充值</view>
+            </view>
+        </view>
+    </view>
+</view>

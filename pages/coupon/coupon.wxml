@@ -1,0 +1,20 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="page">
+    <van-tabs active="{{ active }}" bind:change="onChange" color="#3575FF" line-width="44rpx">
+        <van-tab title="待使用">
+            <view class="items">
+                <view class="item">
+                    <view class="left">
+                        <view class="line1">
+                            ￥
+                        </view>
+                        <view class="line2"></view>
+                    </view>
+                    <view class="right"></view>
+                </view>
+            </view>
+        </van-tab>
+        <van-tab title="已使用">已使用</van-tab>
+        <van-tab title="无效券">无效券</van-tab>
+    </van-tabs>
+</view>

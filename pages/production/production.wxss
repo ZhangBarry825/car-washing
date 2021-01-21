@@ -1,0 +1,38 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+}
+.page .items {
+  width: 100%;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.page .items .item {
+  margin-bottom: 40rpx;
+  width: 100%;
+  height: 350rpx;
+  background: #091324;
+  border-radius: 24rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  z-index: -2;
+}
+.page .items .item image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.page .items .item text {
+  z-index: 1;
+  padding: 39rpx;
+  box-sizing: border-box;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "xichexiaochengxu",
+  "version": "1.0.0",
+  "description": "洗车小程序",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zhang Barry (guide.zhangbarry@qq.com)",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.6.5"
+  }
+}

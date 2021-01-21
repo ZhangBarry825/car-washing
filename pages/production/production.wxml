@@ -1,0 +1,10 @@
+<!--pages/production/production.wxml-->
+<view class="page">
+    <van-search shape="round" value="{{ searchKey }}" placeholder="搜索" />
+    <view class="items">
+        <view class="item" wx:for="{{5}}" wx:key="id">
+            <image mode="aspectFill" src="https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg"></image>
+            <text>消光系列</text>
+        </view>
+    </view>
+</view>

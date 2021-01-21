@@ -1,0 +1,223 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+}
+.page .swipe-box {
+  margin-top: 20rpx;
+  width: 100%;
+  height: 280rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+}
+.page .swipe-box .swipe swiper {
+  height: 280rpx;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page .swipe-box .swipe swiper .swiper-item {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.page .swipe-box .swipe swiper .demo-text-1 {
+  height: 100%;
+  width: 100%;
+  background-color: gainsboro;
+}
+.page .swipe-box .swipe swiper .demo-text-2 {
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+.page .swipe-box .swipe swiper .demo-text-3 {
+  height: 100%;
+  width: 100%;
+  background-color: firebrick;
+}
+.page .announce-box {
+  border-bottom: 1px solid #F0F0F0;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page .announce-box .left {
+  width: calc(100% - 11rpx);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page .announce-box .left image {
+  width: 139rpx;
+  height: 28rpx;
+}
+.page .announce-box .left .border {
+  width: 2px;
+  height: 30rpx;
+  background: #E5E5E5;
+  margin: 0 20rpx;
+  flex-shrink: 0;
+}
+.page .announce-box .left .title {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333333;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.page .announce-box .right {
+  width: 11rpx;
+  flex-shrink: 0;
+  padding-left: 10rpx;
+  box-sizing: border-box;
+}
+.page .announce-box .right image {
+  width: 11rpx;
+  height: 18rpx;
+}
+.page .menus {
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.page .menus .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page .menus .item text {
+  margin-top: 15rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.page .area-title {
+  width: 100%;
+  padding: 0 30rpx;
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .area-title .left {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.page .area-title .right {
+  display: flex;
+  align-items: center;
+}
+.page .area-title .right text {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #B4B4B4;
+}
+.page .area-title .right image {
+  padding-left: 8rpx;
+  width: 11rpx;
+  height: 18rpx;
+}
+.page .production-items {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+  overflow: scroll;
+  margin-bottom: 60rpx;
+}
+.page .production-items .item {
+  flex-shrink: 0;
+  width: 500rpx;
+  height: 300rpx;
+  background: #102242;
+  opacity: 0.5;
+  border-radius: 24rpx;
+  margin-right: 30rpx;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page .production-items .item image {
+  width: 80rpx;
+  height: 80rpx;
+}
+.page .cheap {
+  width: 100%;
+  padding: 0 30rpx;
+  padding-bottom: 50rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.page .cheap .back-image {
+  position: absolute;
+  width: calc(100% - 60rpx);
+  height: 200rpx;
+  z-index: -1;
+}
+.page .cheap .box {
+  z-index: 111;
+  width: 100%;
+  height: 200rpx;
+  padding: 54rpx 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.page .cheap .box .left {
+  display: flex;
+  flex-direction: column;
+}
+.page .cheap .box .left .line1 {
+  margin-bottom: 28rpx;
+  font-size: 40rpx;
+  font-weight: 800;
+  color: #3575FF;
+}
+.page .cheap .box .left .line2 {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #3575FF;
+  opacity: 0.8;
+}
+.page .cheap .box .right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+.page .cheap .box .right .line1 {
+  width: 120rpx;
+  padding: 12rpx 0;
+  background: linear-gradient(90deg, #3373FF 0%, #60A3FF 100%);
+  border-radius: 27rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 28rpx;
+}
+.page .cheap .box .right .line2 {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #3575FF;
+  opacity: 0.6;
+}
