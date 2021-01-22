@@ -20,7 +20,7 @@
         <view class="box">
             <view class="box-title">我的订单</view>
             <view class="box-items">
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/my-order/my-order">
                     <image mode="aspectFit" src="../../static/images/o1.png"></image>
                     <text>全部订单</text>
                 </view>
@@ -46,7 +46,7 @@
                 <text>0</text>个未使用
             </view>
         </view>
-        <view class="white">
+        <view class="white" bind:tap="goTo" data-path="/pages/vip-card/vip-card">
             <view class="line1">
                 <image src="../../static/images/w2.png"></image>
                 <text>会员卡</text>

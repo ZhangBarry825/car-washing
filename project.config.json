@@ -81,6 +81,19 @@
         {
           "name": "优惠券",
           "pathName": "pages/coupon/coupon",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "会员卡",
+          "pathName": "pages/vip-card/vip-card",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的订单",
+          "pathName": "pages/my-order/my-order",
+          "query": "",
           "scene": null
         }
       ]

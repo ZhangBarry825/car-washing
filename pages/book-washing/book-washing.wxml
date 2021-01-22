@@ -1,0 +1,4 @@
+<!--pages/book-washing/book-washing.wxml-->
+<view class="page">
+    <view class="top"></view>
+</view>

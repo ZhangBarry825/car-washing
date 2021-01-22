@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/my-order/my-order.js
 Page({
 
   /**
@@ -6,32 +6,14 @@ Page({
    */
   data: {
     searchKey:'',
-    swiperConfig:{
-      indicatorDots: true,
-      vertical: false,
-      autoplay: true,
-      interval: 3000,
-      duration: 500,
-    },
-    bannerList:[
-      {
-        src:'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg'
-      },
-      {
-        src:'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg'
-      },
-      {
-        src:'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg'
-      },
-    ],
-
+    active: 0,
   },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
+  onChange(event) {
+    wx.showToast({
+      title: `切换到标签 ${event.detail.name}`,
+      icon: 'none',
+    });
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

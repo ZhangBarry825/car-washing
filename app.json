@@ -3,7 +3,11 @@
     "pages/home/home",
     "pages/mine/mine",
     "pages/production/production",
-    "pages/coupon/coupon"
+    "pages/coupon/coupon",
+    "pages/vip-card/vip-card",
+    "pages/my-order/my-order",
+    "pages/book-washing/book-washing"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

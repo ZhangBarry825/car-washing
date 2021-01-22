@@ -32,7 +32,7 @@
         </view>
     </view>
     <view class="menus">
-        <view class="item">
+        <view class="item" bind:tap="goTo" data-path="/pages/book-washing/book-washing">
             <van-image
                     width="100rpx"
                     height="100rpx"

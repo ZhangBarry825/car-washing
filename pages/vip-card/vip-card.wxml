@@ -1,0 +1,62 @@
+<!--pages/vip-card/vip-card.wxml-->
+<view class="page">
+    <view class="card-box">
+        <view class="card">
+            <image class="back" src="../../static/images/vip-back1.png"></image>
+            <view class="left">
+                <view class="line1">余额（元）</view>
+                <view class="line2">300.00</view>
+            </view>
+            <view class="right">充值</view>
+        </view>
+    </view>
+    <view class="border-box"></view>
+
+    <view class="bottom-box">
+        <view class="title">
+            明细
+        </view>
+        <view class="items">
+            <view class="item">
+                <view class="left">
+                    <view class="line1">
+                        <image src="../../static/images/i1.png"></image>
+                        <text>银行卡充值</text>
+                    </view>
+                    <view class="line2">2021-01-04  09:35</view>
+                </view>
+                <view class="right">+1000</view>
+            </view>
+            <view class="item">
+                <view class="left">
+                    <view class="line1">
+                        <image src="../../static/images/i2.png"></image>
+                        <text>车灯保养</text>
+                    </view>
+                    <view class="line2">2021-01-04  09:35</view>
+                </view>
+                <view class="right">-1000</view>
+            </view>
+            <view class="item">
+                <view class="left">
+                    <view class="line1">
+                        <image src="../../static/images/i3.png"></image>
+                        <text>车身贴膜</text>
+                    </view>
+                    <view class="line2">2021-01-04  09:35</view>
+                </view>
+                <view class="right">-1000</view>
+            </view>
+            <view class="item">
+                <view class="left">
+                    <view class="line1">
+                        <image src="../../static/images/i4.png"></image>
+                        <text>车轮改装</text>
+                    </view>
+                    <view class="line2">2021-01-04  09:35</view>
+                </view>
+                <view class="right">-1000</view>
+            </view>
+        </view>
+    </view>
+</view>
