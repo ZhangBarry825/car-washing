@@ -95,6 +95,29 @@
           "pathName": "pages/my-order/my-order",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "洗车预约",
+          "pathName": "pages/book-washing/book-washing",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "改装预约",
+          "pathName": "pages/book-refit/book-refit",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "车衣预约",
+          "pathName": "pages/book-clothes/book-clothes",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "保养预约",
+          "pathName": "pages/book-upkeep/book-upkeep",
+          "scene": null
         }
       ]
     }

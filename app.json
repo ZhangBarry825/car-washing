@@ -6,8 +6,10 @@
     "pages/coupon/coupon",
     "pages/vip-card/vip-card",
     "pages/my-order/my-order",
-    "pages/book-washing/book-washing"
-
+    "pages/book-washing/book-washing",
+    "pages/book-refit/book-refit",
+    "pages/book-clothes/book-clothes",
+    "pages/book-upkeep/book-upkeep"
   ],
   "window":{
     "backgroundTextStyle":"light",

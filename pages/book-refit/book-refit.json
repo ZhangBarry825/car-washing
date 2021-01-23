@@ -2,8 +2,8 @@
   "usingComponents": {
     "van-image": "@vant/weapp/image/index",
     "van-datetime-picker": "@vant/weapp/datetime-picker/index",
-    "van-popup": "@vant/weapp/popup/index"
-
+    "van-popup": "@vant/weapp/popup/index",
+    "van-picker": "@vant/weapp/picker/index"
   },
-  "navigationBarTitleText": "洗车预约"
+  "navigationBarTitleText": "改装预约"
 }

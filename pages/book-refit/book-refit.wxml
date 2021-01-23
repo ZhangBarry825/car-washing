@@ -1,0 +1,176 @@
+<!--pages/book-refit/book-refit.wxml-->
+<view class="page">
+    <view class="top">
+        <view class="item">
+            <text>12-31</text>
+            <text>今天</text>
+        </view>
+        <view class="item active">
+            <text>12-31</text>
+            <text>明天</text>
+        </view>
+        <view class="item">
+            <text>12-31</text>
+            <text>周六</text>
+        </view>
+        <view class="item">
+            <text>12-31</text>
+            <text>周日</text>
+        </view>
+        <view class="item">
+            <text>12-31</text>
+            <text>周一</text>
+        </view>
+        <view class="item" bind:tap="showTimeSelector">
+            <image src="../../static/images/calendar.png"></image>
+        </view>
+    </view>
+    <view class="time">
+        <view class="item active">
+            <text>9:00 - 11:00</text>
+            <image src="../../static/images/s1.png"></image>
+        </view>
+        <view class="item">
+            <text>11:00 - 13:00</text>
+            <image src="../../static/images/s0.png"></image>
+        </view>
+        <view class="item">
+            <text>13:00 - 15:00</text>
+            <image src="../../static/images/s0.png"></image>
+        </view>
+        <view class="item">
+            <text>15:00 - 17:00</text>
+            <image src="../../static/images/s0.png"></image>
+        </view>
+        <view class="item">
+            <text>17:00 - 19:00</text>
+            <image src="../../static/images/s0.png"></image>
+        </view>
+    </view>
+    <view class="select-model" bind:tap="showModelSelector">
+        <view class="left">车辆型号</view>
+        <view class="right">
+            <text>保时捷</text>
+            <image src="../../static/images/more.png"></image>
+        </view>
+    </view>
+    <view class="refit-detail">
+        <view class="title">改装部位</view>
+        <view class="items">
+            <view class="item active">
+                <text>车轮</text>
+                <view class="selected">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
+            </view>
+            <view class="item">
+                <text>踏板</text>
+            </view>
+            <view class="item">
+                <text>全车隔音</text>
+            </view>
+            <view class="item">
+                <text>发动机</text>
+            </view>
+            <view class="item">
+                <text>行李架</text>
+            </view>
+            <view class="item">
+                <text>加装音响</text>
+            </view>
+            <view class="item">
+                <text>尾翼</text>
+            </view>
+            <view class="item">
+                <text>车灯</text>
+            </view>
+        </view>
+        <view class="image-box">
+            <view class="main">
+                <van-image
+                        width="100%"
+                        height="100%"
+                        fit="cover"
+                        src="https://img.yzcdn.cn/vant/cat.jpeg"
+                />
+            </view>
+            <view class="image-items">
+                <view class="image-item">
+                    <van-image
+                            width="100%"
+                            height="100%"
+                            fit="cover"
+                            round
+                            src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    />
+                    <image class="selected" src="../../static/images/s1.png"></image>
+                </view>
+                <view class="image-item">
+                    <van-image
+                            width="100%"
+                            height="100%"
+                            fit="cover"
+                            round
+                            src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    />
+                </view>
+                <view class="image-item">
+                    <van-image
+                            width="100%"
+                            height="100%"
+                            fit="cover"
+                            round
+                            src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    />
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="video-box">
+        <view class="title">视频展示</view>
+        <view class="video">
+            <image class="play" src="../../static/images/play.png"></image>
+        </view>
+    </view>
+    <view class="cell-box">
+        <view class="cell">
+            <view class="left">选择门店</view>
+            <view class="right">万豪汽车美容中心</view>
+        </view>
+        <view class="cell">
+            <view class="left">备注</view>
+            <view class="right">
+                <input type="text" placeholder="备注信息如：车牌号等"/>
+            </view>
+        </view>
+    </view>
+    <view class="fixed-box">
+        <view class="left">
+            <text class="label">合计:</text>
+            <text class="number"><text class="symbol">￥</text>30.0</text>
+        </view>
+        <view class="right">立即下单</view>
+    </view>
+</view>
+<van-popup show="{{ showTimer }}" bind:close="closeTimeSelector"
+           position="bottom"
+           custom-style="height: 40%;">
+    <van-datetime-picker
+            show-toolbar="{{true}}"
+            confirm-button-text="确认"
+            cancel-button-text="取消"
+            type="date"
+            title="请选择预约日期"
+            value="{{ currentDate }}"
+            bind:input="onInput"
+            min-date="{{ minDate }}"
+            formatter="{{ formatter }}"
+    />
+</van-popup>
+<van-popup show="{{ showModel }}" bind:close="closeModelSelector"
+           position="bottom"
+           custom-style="height: 40%;">
+    <van-picker  show-toolbar
+                 title="标题" columns="{{ columns }}" bind:change="onModelChange" />
+</van-popup>

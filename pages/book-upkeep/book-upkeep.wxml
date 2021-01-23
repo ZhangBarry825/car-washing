@@ -47,9 +47,19 @@
             <image src="../../static/images/s0.png"></image>
         </view>
     </view>
+    <view class="select-model" bind:tap="showModelSelector">
+        <view class="left">车辆型号</view>
+        <view class="right">
+            <text>保时捷</text>
+            <image src="../../static/images/more.png"></image>
+        </view>
+    </view>
     <view class="suggestion">
-        <view class="title">套餐推荐</view>
-        <view class="items">
+        <view class="title">
+            <view class="item {{productIndex == 1?'active':''}}" bind:tap="changeProductIndex" data-index="{{1}}">套餐推荐</view>
+            <view class="item {{productIndex == 2?'active':''}}" bind:tap="changeProductIndex" data-index="{{2}}">保养种类</view>
+        </view>
+        <view class="items" wx:if="{{productIndex==1}}">
             <view class="item active">
                 <view class="top">
                     <image src="../../static/images/b1.png"></image>
@@ -119,6 +129,75 @@
                 </view>
             </view>
         </view>
+        <view class="items2" wx:if="{{productIndex==2}}">
+            <view class="option">
+                <view class="line">
+                    <image src="../../static/images/s1.png"></image>
+                    <text>机油</text>
+                </view>
+                <view class="options">
+                    <view class="options-line">
+                        <view class="line-title">数量</view>
+                        <view class="line-items">
+                            <view class="line-item active">
+                                <text>1升</text>
+                                <view class="selected">
+                                    <image class="selected1" src="../../static/images/selected.png"></image>
+                                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                                </view>
+                            </view>
+                            <view class="line-item">
+                                <text>2升</text>
+                            </view>
+                            <view class="line-item">
+                                <text>3升</text>
+                            </view>
+
+                        </view>
+                    </view>
+                    <view class="options-line">
+                        <view class="line-title">品牌</view>
+                        <view class="line-items">
+                            <view class="line-item active">
+                                <text>壳牌</text>
+                                <view class="selected">
+                                    <image class="selected1" src="../../static/images/selected.png"></image>
+                                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                                </view>
+                            </view>
+                            <view class="line-item">
+                                <text>美孚</text>
+                            </view>
+                            <view class="line-item">
+                                <text>长城</text>
+                            </view>
+                            <view class="line-item">
+                                <text>奥普顿</text>
+                            </view>
+                            <view class="line-item">
+                                <text>康普顿</text>
+                            </view>
+                            <view class="line-item">
+                                <text>龙蟠</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="line">
+                    <image src="../../static/images/s1.png"></image>
+                    <text>空调滤芯</text>
+                </view>
+                <view class="line">
+                    <image src="../../static/images/s0.png"></image>
+                    <text>刹车片</text>
+                </view>
+                <view class="line">
+                    <image src="../../static/images/s0.png"></image>
+                    <text>空滤</text>
+                </view>
+            </view>
+        </view>
     </view>
     <view class="cell-box">
         <view class="cell">
@@ -154,4 +233,11 @@
             min-date="{{ minDate }}"
             formatter="{{ formatter }}"
     />
+</van-popup>
+
+<van-popup show="{{ showModel }}" bind:close="closeModelSelector"
+           position="bottom"
+           custom-style="height: 40%;">
+    <van-picker  show-toolbar
+                 title="标题" columns="{{ columns }}" bind:change="onModelChange" />
 </van-popup>

@@ -1,11 +1,17 @@
 // pages/book-washing/book-washing.js
+const cars = {
+  保时捷: ['Macan', 'Cayenne', '帕拉梅拉', '911', '918'],
+  法拉利: ['458 Italia', '599', '612', 'F430'],
+};
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    productIndex:1,
     showTimer:false,
+    showModel:false,
     currentDate: new Date().getTime(),
     minDate: new Date().getTime(),
     formatter(type, value) {
@@ -16,12 +22,38 @@ Page({
       }
       return value;
     },
+    columns: [
+      {
+        values: Object.keys(cars),
+        className: 'column1',
+      },
+      {
+        values: cars['保时捷'],
+        className: 'column2',
+        defaultIndex: 2,
+      },
+    ],
+  },
+  changeProductIndex(e){
+   this.setData({
+     productIndex:e.currentTarget.dataset.index
+   })
   },
   showTimeSelector() {
     this.setData({ showTimer: true });
   },
   closeTimeSelector(){
     this.setData({ showTimer: false });
+  },
+  showModelSelector() {
+    this.setData({ showModel: true });
+  },
+  closeModelSelector(){
+    this.setData({ showModel: false });
+  },
+  onModelChange(event) {
+    const { picker, value, index } = event.detail;
+    picker.setColumnValues(1, cars[value[0]]);
   },
   onInput(event) {
     this.setData({

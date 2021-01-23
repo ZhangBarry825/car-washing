@@ -40,7 +40,7 @@
                     src="/static/images/btn1.png"/>
             <text>洗车预约</text>
         </view>
-        <view class="item">
+        <view class="item" bind:tap="goTo" data-path="/pages/book-upkeep/book-upkeep">
             <van-image
                     width="100rpx"
                     height="100rpx"
@@ -48,7 +48,7 @@
                     src="/static/images/btn2.png"/>
             <text>保养预约</text>
         </view>
-        <view class="item">
+        <view class="item" bind:tap="goTo" data-path="/pages/book-refit/book-refit">
             <van-image
                     width="100rpx"
                     height="100rpx"
@@ -56,7 +56,7 @@
                     src="/static/images/btn3.png"/>
             <text>改装预约</text>
         </view>
-        <view class="item">
+        <view class="item" bind:tap="goTo" data-path="/pages/book-clothes/book-clothes">
             <van-image
                     width="100rpx"
                     height="100rpx"
