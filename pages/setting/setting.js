@@ -1,4 +1,4 @@
-// pages/vip-card/vip-card.js
+// pages/setting/setting.js
 Page({
 
   /**
@@ -7,11 +7,7 @@ Page({
   data: {
 
   },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

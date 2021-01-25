@@ -117,6 +117,42 @@
         {
           "name": "保养预约",
           "pathName": "pages/book-upkeep/book-upkeep",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "系统公告",
+          "pathName": "pages/notice-list/notice-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "公告详情",
+          "pathName": "pages/notice-detail/notice-detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "充值",
+          "pathName": "pages/charge/charge",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "个人设置",
+          "pathName": "pages/setting/setting",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "视频展示",
+          "pathName": "pages/video-list/video-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "消光系列",
+          "pathName": "pages/production-list/production-list",
           "scene": null
         }
       ]

@@ -1,4 +1,4 @@
-// pages/vip-card/vip-card.js
+// pages/notice-detail/notice-detail.js
 Page({
 
   /**
@@ -7,16 +7,23 @@ Page({
   data: {
 
   },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var WxParse = require('../../utils/wxParse/wxParse.js');
+    var article = '<div>公告详情</div>';
+    /**
+     * WxParse.wxParse(bindName , type, data, target,imagePadding)
+     * 1.bindName绑定的数据名(必填)
+     * 2.type可以为html或者md(必填)
+     * 3.data为传入的具体数据(必填)
+     * 4.target为Page对象,一般为this(必填)
+     * 5.imagePadding为当图片自适应是左右的单一padding(默认为0,可选)
+     */
+    var that = this;
+    WxParse.wxParse('article', 'html', article, that, 5);
   },
 
   /**

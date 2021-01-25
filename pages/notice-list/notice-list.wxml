@@ -1,0 +1,26 @@
+<!--pages/notice-list/notice-list.wxml-->
+<view class="page">
+    <view class="items">
+        <view class="item" wx:for="{{5}}" wx:key="id" bind:tap="goTo" data-path="/pages/notice-detail/notice-detail">
+            <view class="time">昨天 上午9:07</view>
+            <view class="box">
+                <view class="line1">
+                    <van-image
+                            width="100%"
+                            height="100%"
+                            fit="cover"
+                            src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    />
+                </view>
+                <view class="line2">
+                    <view class="title">2020年春节放假通知</view>
+                    <view class="content">2020年终于要过去了，我们在此祝所有人平安快乐...</view>
+                    <view class="more">
+                        <text>查看详情</text>
+                        <image src="../../static/images/more.png"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

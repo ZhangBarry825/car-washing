@@ -1,0 +1,11 @@
+<!--pages/video-list/video-list.wxml-->
+<view class="page">
+    <view class="items">
+        <view class="item" wx:for="{{5}}" wx:key="id">
+            <view class="image">
+                <image class="=play" src="../../static/images/play.png"></image>
+            </view>
+            <view class="title">保时捷Panamera GTS 车型透明保护膜</view>
+        </view>
+    </view>
+</view>

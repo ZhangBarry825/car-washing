@@ -7,7 +7,7 @@
                 <view class="line1">余额（元）</view>
                 <view class="line2">300.00</view>
             </view>
-            <view class="right">充值</view>
+            <view class="right" bind:tap="goTo" data-path="/pages/charge/charge">充值</view>
         </view>
     </view>
     <view class="border-box"></view>

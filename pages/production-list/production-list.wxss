@@ -1,0 +1,39 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+}
+.page .items {
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.page .items .item {
+  width: 330rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50rpx;
+}
+.page .items .item .image {
+  width: 100%;
+  height: 208rpx;
+  border-radius: 12rpx;
+}
+.page .items .item .title {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 20rpx;
+}
+.page .items .item .description {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 10rpx;
+}
+.page .items .item:nth-child(2n) {
+  margin-right: 0;
+}

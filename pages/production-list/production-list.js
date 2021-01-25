@@ -1,11 +1,24 @@
-// pages/vip-card/vip-card.js
+// pages/production-list/production-list.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    option1: [
+      { text: '全部品牌', value: 0 },
+      { text: '法拉利', value: 1 },
+      { text: '保时捷', value: 2 },
+      { text: '布加迪', value: 3 },
+      { text: '奥迪双钻', value: 3 },
+    ],
+    option2: [
+      { text: '全部车系', value: 'a' },
+      { text: '车系一', value: 'b' },
+      { text: '车系二', value: 'c' },
+    ],
+    value1: 0,
+    value2: 'a',
   },
   goTo(e){
     wx.navigateTo({

@@ -1,0 +1,38 @@
+<!--pages/setting/setting.wxml-->
+<view class="page">
+    <view class="items">
+        <view class="item">
+            <view class="left">头像</view>
+            <view class="right">
+                <van-image
+                        width="90rpx"
+                        height="90rpx"
+                        fit="cover"
+                        round
+                        src="https://img.yzcdn.cn/vant/cat.jpeg"
+                />
+                <image class="more" src="../../static/images/more.png"></image>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">昵称</view>
+            <view class="right">
+                <input type="text" placeholder="请填写"/>
+                <image class="more" src="../../static/images/more.png"></image>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">绑定手机</view>
+            <view class="right">
+                <text>未绑定</text>
+                <image class="more" src="../../static/images/more.png"></image>
+            </view>
+        </view>
+        <view class="item">
+            <view class="left">地址管理</view>
+            <view class="right">
+                <image class="more" src="../../static/images/more.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

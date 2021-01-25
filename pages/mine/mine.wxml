@@ -67,7 +67,7 @@
                     <image mode="aspectFit" src="../../static/images/more.png"></image>
                 </view>
             </view>
-            <view class="item">
+            <view class="item" bind:tap="goTo" data-path="/pages/setting/setting">
                 <view class="left">
                     <image mode="aspectFit" src="../../static/images/m2.png"></image>
                     <text>个人设置</text>

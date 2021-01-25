@@ -1,4 +1,4 @@
-// pages/vip-card/vip-card.js
+// pages/notice-list/notice-list.js
 Page({
 
   /**
@@ -7,6 +7,7 @@ Page({
   data: {
 
   },
+
   goTo(e){
     wx.navigateTo({
       url:e.currentTarget.dataset.path

@@ -20,16 +20,16 @@
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  z-index: -2;
+  z-index: 1;
 }
 .page .items .item image {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -1;
+  z-index: 2;
 }
 .page .items .item text {
-  z-index: 1;
+  z-index: 2;
   padding: 39rpx;
   box-sizing: border-box;
   font-size: 40rpx;

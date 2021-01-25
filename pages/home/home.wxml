@@ -21,9 +21,9 @@
             </swiper>
         </view>
     </view>
-    <view class="announce-box">
+    <view class="announce-box" bind:tap="goTo" data-path="/pages/notice-list/notice-list">
         <view class="left">
-            <image src="../../static/images/announce.png"></image>
+            <image src="../../static/images/announce.png" ></image>
             <view class="border"></view>
             <view class="title">刹车盘要多久换一次？有哪些判断依据...</view>
         </view>
@@ -67,7 +67,7 @@
     </view>
     <view class="area-title">
         <view class="left">精选作品</view>
-        <view class="right">
+        <view class="right" bind:tap="goTo" data-path="/pages/video-list/video-list">
             <text>查看更多</text>
             <image src="../../static/images/more.png"></image>
         </view>

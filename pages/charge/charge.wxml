@@ -1,0 +1,15 @@
+<!--pages/charge/charge.wxml-->
+<view class="page">
+    <view class="line1">充值金额(元)</view>
+    <view class="line2">
+        <view class="left">
+            ￥
+        </view>
+        <view class="right">
+            <input type="number" value="{{value}}"/>
+        </view>
+    </view>
+    <view class="line3"></view>
+    <view class="line4">充值金额越高，折扣力度越大</view>
+    <view class="line5">确认充值</view>
+</view>

@@ -1,0 +1,54 @@
+<!--pages/production-list/production-list.wxml-->
+<view class="page">
+    <van-dropdown-menu>
+        <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+        <van-dropdown-item value="{{ value2 }}" options="{{ option2 }}" />
+    </van-dropdown-menu>
+    <view class="items">
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">布加迪威龙</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2801436104,3305685701&fm=26&gp=0.jpg"></image>
+            <view class="title">阿尔法罗密欧</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.mp.itc.cn%2Fupload%2F20160727%2F8d5900b36be746ec85123112a83a128b.png&refer=http%3A%2F%2Fimg.mp.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1614148274&t=c8e800e4ccf42701497493227c8b9de1"></image>
+            <view class="title">法拉利</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3778803317,1294747539&fm=26&gp=0.jpg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+        <view class="item" bind:tap="goTo" data-path="/pages/production-detail/production-detail">
+            <image class="image" src="http://5b0988e595225.cdn.sohucs.com/images/20190823/7c5ddb6e322d4c3980dbdd644cb9333e.jpeg"></image>
+            <view class="title">保时捷卡宴</view>
+            <view class="description">消光黑比诺紫</view>
+        </view>
+    </view>
+</view>

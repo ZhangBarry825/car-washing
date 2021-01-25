@@ -3,13 +3,20 @@
     "pages/home/home",
     "pages/mine/mine",
     "pages/production/production",
+    "pages/production-list/production-list",
+    "pages/production-detail/production-detail",
     "pages/coupon/coupon",
     "pages/vip-card/vip-card",
     "pages/my-order/my-order",
     "pages/book-washing/book-washing",
     "pages/book-refit/book-refit",
     "pages/book-clothes/book-clothes",
-    "pages/book-upkeep/book-upkeep"
+    "pages/book-upkeep/book-upkeep",
+    "pages/notice-list/notice-list",
+    "pages/notice-detail/notice-detail",
+    "pages/charge/charge",
+    "pages/setting/setting",
+    "pages/video-list/video-list"
   ],
   "window":{
     "backgroundTextStyle":"light",

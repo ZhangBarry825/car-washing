@@ -1,17 +1,13 @@
-// pages/vip-card/vip-card.js
+// pages/charge/charge.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    value:2000
+  },
 
-  },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */
