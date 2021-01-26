@@ -1,6 +1,18 @@
-<!--pages/confirm-order/confirm-order.wxml-->
+<!--pages/order-detail/order-detail.wxml-->
 <view class="page">
-    <view class="back-color"></view>
+    <view class="back-color">
+        <view class="left">
+            <view class="line1">已付款/待付款</view>
+            <view class="line2">您的宝贝正在飞速运往您的身边</view>
+<!--            <view class="line2">赶快将您心仪的产品带回家吧！</view>-->
+<!--            <view class="line2">您的订单已经关闭，去挑选商品吧~</view>-->
+        </view>
+        <view class="right">
+            <image src="../../static/images/order.png"></image>
+<!--            <image src="../../static/images/wallet.png"></image>-->
+<!--            <image src="../../static/images/closed.png"></image>-->
+        </view>
+    </view>
     <view class="white">
         <view class="box">
             <view class="line1">
@@ -42,32 +54,20 @@
     </view>
     <view class="white">
         <view class="box">
-            <view class="line5">
-                <view class="left">手机号码</view>
-                <view class="right">13624567895</view>
+            <view class="line6">
+                <view class="left">订单编号：1036408126855425263</view>
+                <view class="right">复制</view>
             </view>
-            <view class="border"></view>
-            <view class="line5">
-                <view class="left">备注</view>
-                <view class="right">
-                    <input type="text" placeholder="备注信息如：车牌号等" />
-                </view>
+            <view class="line6">
+                <view class="left">下单时间：2020-06-03   17:06</view>
+            </view>
+            <view class="line6">
+                <view class="left">付款时间：2020-06-03   17:06</view>
             </view>
         </view>
     </view>
-
 </view>
-<view class="fixed-box">
-    <view class="left">
-        <text class="label">合计:</text>
-        <text class="number"><text class="symbol">￥</text>30.0</text>
-    </view>
-    <view class="right" bind:tap="goTo" data-path="/pages/confirm-order/confirm-order">提交订单</view>
+<view class="fixed">
+    <view class="button">再来一单</view>
+    <view class="button pay">去付款</view>
 </view>
-
-
-
-
-
-
-

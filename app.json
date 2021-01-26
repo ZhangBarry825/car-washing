@@ -17,7 +17,8 @@
     "pages/charge/charge",
     "pages/setting/setting",
     "pages/video-list/video-list",
-    "pages/confirm-order/confirm-order"
+    "pages/confirm-order/confirm-order",
+    "pages/order-detail/order-detail"
   ],
   "window":{
     "backgroundTextStyle":"light",

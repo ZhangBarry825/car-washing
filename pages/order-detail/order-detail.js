@@ -1,24 +1,13 @@
-// pages/my-order/my-order.js
+// pages/order-detail/order-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    searchKey:'',
-    active: 0,
+
   },
-  onChange(event) {
-    wx.showToast({
-      title: `切换到标签 ${event.detail.name}`,
-      icon: 'none',
-    });
-  },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

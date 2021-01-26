@@ -159,6 +159,12 @@
         {
           "name": "确认订单",
           "pathName": "pages/confirm-order/confirm-order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "订单详情",
+          "pathName": "pages/order-detail/order-detail",
           "scene": null
         }
       ]

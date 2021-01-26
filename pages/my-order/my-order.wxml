@@ -4,7 +4,7 @@
     <van-tabs animated sticky active="{{ active }}" bind:change="onChange" color="#3575FF" line-width="44rpx">
         <van-tab title="全部">
             <view class="items">
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1">
                         等待买家付款
                     </view>
@@ -32,7 +32,7 @@
                         <view class="button button2">去付款</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1 gray">
                         已付款
                     </view>
@@ -59,7 +59,7 @@
                         <view class="button">再来一单</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1 gray">
                         已关闭
                     </view>
@@ -90,7 +90,7 @@
         </van-tab>
         <van-tab title="待付款">
             <view class="items">
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1">
                         等待买家付款
                     </view>
@@ -118,7 +118,7 @@
                         <view class="button button2">去付款</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1">
                         等待买家付款
                     </view>
@@ -146,7 +146,7 @@
                         <view class="button button2">去付款</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1">
                         等待买家付款
                     </view>
@@ -178,7 +178,7 @@
         </van-tab>
         <van-tab title="已付款">
             <view class="items">
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1 gray">
                         已付款
                     </view>
@@ -205,7 +205,7 @@
                         <view class="button">再来一单</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1 gray">
                         已付款
                     </view>
@@ -232,7 +232,7 @@
                         <view class="button">再来一单</view>
                     </view>
                 </view>
-                <view class="item">
+                <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">
                     <view class="line1 gray">
                         已付款
                     </view>

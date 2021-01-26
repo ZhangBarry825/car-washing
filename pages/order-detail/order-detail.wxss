@@ -1,0 +1,223 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #faf7fa;
+  z-index: 1;
+  padding-top: 200rpx;
+  box-sizing: border-box;
+}
+.page .back-color {
+  width: 750rpx;
+  height: 300rpx;
+  background: linear-gradient(#3373FF, #faf7fa);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 52rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-top: 50rpx;
+}
+.page .back-color .left {
+  display: flex;
+  flex-direction: column;
+}
+.page .back-color .left .line1 {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.page .back-color .left .line2 {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+  opacity: 0.6;
+  margin-top: 20rpx;
+}
+.page .back-color .right image {
+  width: 165rpx;
+  height: 192rpx;
+}
+.page .white {
+  z-index: 3;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+.page .white .box {
+  padding: 30rpx;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 24rpx;
+}
+.page .white .box .line1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page .white .box .line1 .left {
+  width: 138rpx;
+  height: 80rpx;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+.page .white .box .line1 .right {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 20rpx;
+}
+.page .white .box .line2 {
+  font-size: 30rpx;
+  font-weight: 500;
+  color: #666666;
+  margin-top: 35rpx;
+}
+.page .white .box .line3 {
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .white .box .line3 .left {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #999999;
+}
+.page .white .box .line3 .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.page .white .box .line3 .right text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #999999;
+  margin-right: 15rpx;
+}
+.page .white .box .line3 .right image {
+  width: 14rpx;
+  height: 25rpx;
+}
+.page .white .box .line4 {
+  padding: 25rpx 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.page .white .box .line4 .text {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #999999;
+}
+.page .white .box .line4 .symbol {
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.page .white .box .line4 .price {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.page .white .box .border {
+  width: 100%;
+  border-bottom: 1px solid #F0F0F0;
+}
+.page .white .box .line5 {
+  padding: 25rpx 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.page .white .box .line5 .left {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.page .white .box .line5 .right {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+}
+.page .white .box .line5 .right input {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+  text-align: right;
+}
+.page .white .box .line6 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20rpx;
+}
+.page .white .box .line6 .left {
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #666666;
+}
+.page .white .box .line6 .right {
+  width: 96rpx;
+  height: 40rpx;
+  border: 1px solid #3575FF;
+  border-radius: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22rpx;
+  font-weight: 500;
+  color: #3575FF;
+}
+.page .white .box .line6:last-child {
+  padding-bottom: 0;
+}
+.fixed {
+  z-index: 9;
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #FFFFFF;
+}
+.fixed .button {
+  box-sizing: border-box;
+  width: 212rpx;
+  height: 70rpx;
+  border: 1px solid #CCCCCC;
+  border-radius: 35rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #999999;
+  margin-left: 20rpx;
+}
+.fixed .pay {
+  border: none;
+  background: linear-gradient(0deg, #60A3FF 0%, #3373FF 100%);
+  color: #FFFFFF;
+}
