@@ -150,7 +150,7 @@
             <text class="label">合计:</text>
             <text class="number"><text class="symbol">￥</text>30.0</text>
         </view>
-        <view class="right">立即下单</view>
+        <view class="right" bind:tap="goTo" data-path="/pages/confirm-order/confirm-order">立即下单</view>
     </view>
 </view>
 <van-popup show="{{ showTimer }}" bind:close="closeTimeSelector"

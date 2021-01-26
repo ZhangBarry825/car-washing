@@ -1,0 +1,65 @@
+<!--pages/confirm-order/confirm-order.wxml-->
+<view class="page">
+    <view class="back-color"></view>
+    <view class="white">
+        <view class="box">
+            <view class="line1">
+                <view class="left">
+                    <van-image
+                            width="138rpx"
+                            height="80rpx"
+                            fit="cover"
+                            src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3456634934,1378074673&fm=26&gp=0.jpg"
+                    />
+                </view>
+                <view class="right">内外标准洗</view>
+            </view>
+            <view class="line2">预约时间：2021-01-06  09:00-11:00</view>
+        </view>
+    </view>
+    <view class="white">
+        <view class="box">
+            <view class="line3">
+                <view class="left">商品总价</view>
+                <view class="right">
+                    <text>￥90.0</text>
+                </view>
+            </view>
+            <view class="line3">
+                <view class="left">优惠</view>
+                <view class="right">
+                    <text>-￥0</text>
+                    <image src="../../static/images/more.png"></image>
+                </view>
+            </view>
+            <view class="border"></view>
+            <view class="line4">
+                <text class="text">小计：</text>
+                <text class="symbol">￥</text>
+                <text class="price">90</text>
+            </view>
+        </view>
+    </view>
+    <view class="white">
+        <view class="box">
+            <view class="line5">
+                <view class="left">手机号码</view>
+                <view class="right">13624567895</view>
+            </view>
+            <view class="border"></view>
+            <view class="line5">
+                <view class="left">备注</view>
+                <view class="right">
+                    <input type="text" placeholder="备注信息如：车牌号等" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="fixed-box">
+    <view class="left">
+        <text class="label">合计:</text>
+        <text class="number"><text class="symbol">￥</text>30.0</text>
+    </view>
+    <view class="right" bind:tap="goTo" data-path="/pages/confirm-order/confirm-order">提交订单</view>
+</view>

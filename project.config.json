@@ -153,6 +153,12 @@
         {
           "name": "消光系列",
           "pathName": "pages/production-list/production-list",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "确认订单",
+          "pathName": "pages/confirm-order/confirm-order",
           "scene": null
         }
       ]

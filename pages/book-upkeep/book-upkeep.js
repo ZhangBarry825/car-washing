@@ -34,6 +34,11 @@ Page({
       },
     ],
   },
+  goTo(e){
+    wx.navigateTo({
+      url:e.currentTarget.dataset.path
+    })
+  },
   changeProductIndex(e){
    this.setData({
      productIndex:e.currentTarget.dataset.index

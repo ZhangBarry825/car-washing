@@ -33,6 +33,11 @@ Page({
       },
     ],
   },
+  goTo(e){
+    wx.navigateTo({
+      url:e.currentTarget.dataset.path
+    })
+  },
   showTimeSelector() {
     this.setData({ showTimer: true });
   },

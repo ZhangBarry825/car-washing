@@ -1,38 +1,13 @@
-// pages/book-washing/book-washing.js
+// pages/confirm-order/confirm-order.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showTimer:false,
-    currentDate: new Date().getTime(),
-    minDate: new Date().getTime(),
-    formatter(type, value) {
-      if (type === 'year') {
-        return `${value}年`;
-      } else if (type === 'month') {
-        return `${value}月`;
-      }
-      return value;
-    },
+
   },
-  goTo(e){
-    wx.navigateTo({
-      url:e.currentTarget.dataset.path
-    })
-  },
-  showTimeSelector() {
-    this.setData({ showTimer: true });
-  },
-  closeTimeSelector(){
-    this.setData({ showTimer: false });
-  },
-  onInput(event) {
-    this.setData({
-      currentDate: event.detail,
-    });
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
