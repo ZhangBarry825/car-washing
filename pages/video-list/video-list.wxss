@@ -16,14 +16,19 @@
   margin-bottom: 30rpx;
 }
 .page .items .item .image {
+  z-index: 1;
   width: 100%;
   height: 350rpx;
   background: #102242;
-  opacity: 0.3;
   border-radius: 24rpx;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.page .items .item .image #myVideo {
+  width: 100%;
+  height: 100%;
 }
 .page .items .item .image .play {
   width: 100rpx;

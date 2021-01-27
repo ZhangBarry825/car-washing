@@ -33,6 +33,18 @@ Page({
         defaultIndex: 2,
       },
     ],
+    dateIndex:1,
+    timeIndex:1
+  },
+  chooseDate(e){
+    this.setData({
+      dateIndex:e.currentTarget.dataset.index
+    })
+  },
+  chooseTime(e){
+    this.setData({
+      timeIndex:e.currentTarget.dataset.index
+    })
   },
   goTo(e){
     wx.navigateTo({

@@ -220,15 +220,16 @@
   width: 100%;
   height: 350rpx;
   background: #0A162A;
-  opacity: 0.4;
   border-radius: 24rpx;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  z-index: 2;
 }
-.page .video-box .video .play {
-  width: 100rpx;
-  height: 100rpx;
+.page .video-box .video #myVideo {
+  width: 100%;
+  height: 100%;
 }
 .page .cell-box {
   width: 100%;

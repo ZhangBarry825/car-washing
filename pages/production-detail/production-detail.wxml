@@ -3,7 +3,16 @@
     <view class="title">保时捷Panamera GTS 消光黑比诺紫</view>
     <view class="items">
         <view class="item" wx:for="{{5}}" wx:key="id">
-            <image class="play" src="../../static/images/play.png"></image>
+            <video
+                    id="myVideo"
+                    object-fit="cover"
+                    src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+                    show-center-play-btn='{{true}}'
+                    show-play-btn="{{true}}"
+                    title="保时捷展览"
+                    controls="{{true}}"
+                    poster="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1392443815,1327988762&fm=26&gp=0.jpg">
+            </video>
         </view>
     </view>
 </view>

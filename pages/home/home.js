@@ -1,4 +1,5 @@
 // pages/home/home.js
+
 Page({
 
   /**
@@ -24,8 +25,9 @@ Page({
         src:'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg'
       },
     ],
-
   },
+
+
   goTo(e){
     wx.navigateTo({
       url:e.currentTarget.dataset.path

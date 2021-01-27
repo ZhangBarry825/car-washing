@@ -1,23 +1,23 @@
 <!--pages/book-refit/book-refit.wxml-->
 <view class="page">
     <view class="top">
-        <view class="item">
+        <view class="item {{dateIndex==1?'active':''}}" bind:tap="chooseDate" data-index="1">
             <text>12-31</text>
             <text>今天</text>
         </view>
-        <view class="item active">
+        <view class="item {{dateIndex==2?'active':''}}" bind:tap="chooseDate" data-index="2">
             <text>12-31</text>
             <text>明天</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==3?'active':''}}" bind:tap="chooseDate" data-index="3">
             <text>12-31</text>
             <text>周六</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==4?'active':''}}" bind:tap="chooseDate" data-index="4">
             <text>12-31</text>
             <text>周日</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==5?'active':''}}" bind:tap="chooseDate" data-index="5">
             <text>12-31</text>
             <text>周一</text>
         </view>
@@ -26,25 +26,30 @@
         </view>
     </view>
     <view class="time">
-        <view class="item active">
+        <view class="item {{timeIndex==1?'active':''}}" bind:tap="chooseTime" data-index="1">
             <text>9:00 - 11:00</text>
-            <image src="../../static/images/s1.png"></image>
+            <image wx:if="{{timeIndex!=1}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==1}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==2?'active':''}}" bind:tap="chooseTime" data-index="2">
             <text>11:00 - 13:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=2}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==2}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==3?'active':''}}" bind:tap="chooseTime" data-index="3">
             <text>13:00 - 15:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=3}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==3}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==4?'active':''}}" bind:tap="chooseTime" data-index="4">
             <text>15:00 - 17:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=4}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==4}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==5?'active':''}}" bind:tap="chooseTime" data-index="5">
             <text>17:00 - 19:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=5}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==5}}" src="../../static/images/s1.png"></image>
         </view>
     </view>
     <view class="select-model" bind:tap="showModelSelector">
@@ -57,33 +62,61 @@
     <view class="refit-detail">
         <view class="title">改装部位</view>
         <view class="items">
-            <view class="item active">
+            <view class="item {{partIndex==1?'active':''}}" bind:tap="choosePart" data-index="1">
                 <text>车轮</text>
-                <view class="selected">
+                <view class="selected" wx:if="{{partIndex==1}}">
                     <image class="selected1" src="../../static/images/selected.png"></image>
                     <image class="selected2" src="../../static/images/selected1.png"></image>
                 </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==2?'active':''}}" bind:tap="choosePart" data-index="2">
                 <text>踏板</text>
+                <view class="selected" wx:if="{{partIndex==2}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==3?'active':''}}" bind:tap="choosePart" data-index="3">
                 <text>全车隔音</text>
+                <view class="selected" wx:if="{{partIndex==3}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==4?'active':''}}" bind:tap="choosePart" data-index="4">
                 <text>发动机</text>
+                <view class="selected" wx:if="{{partIndex==4}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==5?'active':''}}" bind:tap="choosePart" data-index="5">
                 <text>行李架</text>
+                <view class="selected" wx:if="{{partIndex==5}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==6?'active':''}}" bind:tap="choosePart" data-index="6">
                 <text>加装音响</text>
+                <view class="selected" wx:if="{{partIndex==6}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==7?'active':''}}" bind:tap="choosePart" data-index="7">
                 <text>尾翼</text>
+                <view class="selected" wx:if="{{partIndex==7}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
-            <view class="item">
+            <view class="item {{partIndex==8?'active':''}}" bind:tap="choosePart" data-index="8">
                 <text>车灯</text>
+                <view class="selected" wx:if="{{partIndex==8}}">
+                    <image class="selected1" src="../../static/images/selected.png"></image>
+                    <image class="selected2" src="../../static/images/selected1.png"></image>
+                </view>
             </view>
         </view>
         <view class="image-box">
@@ -130,7 +163,16 @@
     <view class="video-box">
         <view class="title">视频展示</view>
         <view class="video">
-            <image class="play" src="../../static/images/play.png"></image>
+            <video
+                    id="myVideo"
+                    object-fit="cover"
+                    src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+                    show-center-play-btn='{{true}}'
+                    show-play-btn="{{true}}"
+                    title="保时捷展览"
+                    controls="{{true}}"
+                    poster="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1392443815,1327988762&fm=26&gp=0.jpg">
+            </video>
         </view>
     </view>
     <view class="cell-box">

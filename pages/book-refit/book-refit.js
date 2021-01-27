@@ -32,6 +32,24 @@ Page({
         defaultIndex: 2,
       },
     ],
+    dateIndex:1,
+    timeIndex:1,
+    partIndex:1,
+  },
+  chooseDate(e){
+    this.setData({
+      dateIndex:e.currentTarget.dataset.index
+    })
+  },
+  chooseTime(e){
+    this.setData({
+      timeIndex:e.currentTarget.dataset.index
+    })
+  },
+  choosePart(e){
+    this.setData({
+      partIndex:e.currentTarget.dataset.index
+    })
   },
   goTo(e){
     wx.navigateTo({

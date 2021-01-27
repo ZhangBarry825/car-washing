@@ -146,17 +146,21 @@
   width: 500rpx;
   height: 300rpx;
   background: #102242;
-  opacity: 0.5;
   border-radius: 24rpx;
   margin-right: 30rpx;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 .page .production-items .item image {
   width: 80rpx;
   height: 80rpx;
+}
+.page .production-items .item #myVideo {
+  width: 100%;
+  height: 100%;
 }
 .page .cheap {
   width: 100%;

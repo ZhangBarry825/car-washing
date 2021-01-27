@@ -1,23 +1,23 @@
 <!--pages/book-washing/book-washing.wxml-->
 <view class="page">
     <view class="top">
-        <view class="item">
+        <view class="item {{dateIndex==1?'active':''}}" bind:tap="chooseDate" data-index="1">
             <text>12-31</text>
             <text>今天</text>
         </view>
-        <view class="item active">
+        <view class="item {{dateIndex==2?'active':''}}" bind:tap="chooseDate" data-index="2">
             <text>12-31</text>
             <text>明天</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==3?'active':''}}" bind:tap="chooseDate" data-index="3">
             <text>12-31</text>
             <text>周六</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==4?'active':''}}" bind:tap="chooseDate" data-index="4">
             <text>12-31</text>
             <text>周日</text>
         </view>
-        <view class="item">
+        <view class="item {{dateIndex==5?'active':''}}" bind:tap="chooseDate" data-index="5">
             <text>12-31</text>
             <text>周一</text>
         </view>
@@ -26,25 +26,30 @@
         </view>
     </view>
     <view class="time">
-        <view class="item active">
+        <view class="item {{timeIndex==1?'active':''}}" bind:tap="chooseTime" data-index="1">
             <text>9:00 - 11:00</text>
-            <image src="../../static/images/s1.png"></image>
+            <image wx:if="{{timeIndex!=1}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==1}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==2?'active':''}}" bind:tap="chooseTime" data-index="2">
             <text>11:00 - 13:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=2}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==2}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==3?'active':''}}" bind:tap="chooseTime" data-index="3">
             <text>13:00 - 15:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=3}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==3}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==4?'active':''}}" bind:tap="chooseTime" data-index="4">
             <text>15:00 - 17:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=4}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==4}}" src="../../static/images/s1.png"></image>
         </view>
-        <view class="item">
+        <view class="item {{timeIndex==5?'active':''}}" bind:tap="chooseTime" data-index="5">
             <text>17:00 - 19:00</text>
-            <image src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex!=5}}" src="../../static/images/s0.png"></image>
+            <image wx:if="{{timeIndex==5}}" src="../../static/images/s1.png"></image>
         </view>
     </view>
     <view class="suggestion">
