@@ -29,7 +29,7 @@
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#666666",
-    "selectedColor": "#3575FF",
+    "selectedColor": "#666666",
     "list": [
       {
         "iconPath": "./static/images/m10.png",

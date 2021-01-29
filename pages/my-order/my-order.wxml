@@ -1,7 +1,7 @@
 <!--pages/my-order/my-order.wxml-->
 <view class="page">
     <van-search shape="round" value="{{ searchKey }}" placeholder="全场购保养送洗车券" />
-    <van-tabs animated sticky active="{{ active }}" bind:change="onChange" color="#3575FF" line-width="44rpx">
+    <van-tabs animated sticky active="{{ active }}" bind:change="onChange" color="#222222" line-width="44rpx">
         <van-tab title="全部">
             <view class="items">
                 <view class="item" bind:tap="goTo" data-path="/pages/order-detail/order-detail">

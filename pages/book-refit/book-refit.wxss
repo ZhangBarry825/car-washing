@@ -32,7 +32,7 @@
   height: 38rpx;
 }
 .page .top .active {
-  background: linear-gradient(0deg, #60A3FF 0%, #3373FF 100%);
+  background: #000000;
 }
 .page .top .active text {
   color: #ffffff;
@@ -74,7 +74,7 @@
   margin-right: 0;
 }
 .page .time .active {
-  border: 1px solid #3575FF;
+  border: 1px solid #000000;
 }
 .page .select-model {
   background-color: #ffffff;
@@ -164,11 +164,10 @@
   height: 12rpx;
 }
 .page .refit-detail .items .active {
-  background: #F6F9FF;
-  border: 1px solid #3575FF;
+  border: 1px solid #222222;
 }
 .page .refit-detail .items .active text {
-  color: #3575FF;
+  color: #222222;
 }
 .page .refit-detail .image-box {
   width: 100%;
@@ -302,7 +301,7 @@
 .page .fixed-box .right {
   width: 216rpx;
   height: 80rpx;
-  background: linear-gradient(0deg, #60A3FF 0%, #3373FF 100%);
+  background: #222222;
   border-radius: 40rpx;
   display: flex;
   align-items: center;

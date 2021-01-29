@@ -1,20 +1,26 @@
 <!--pages/mine/mine.wxml-->
 <view class="page">
-    <view class="back-color"></view>
+    <view class="back-color">
+        <image mode="aspectFill" src="../../static/images/mine-back.png"></image>
+    </view>
     <view class="info">
         <view class="left">
-            <view class="line1">136****2546</view>
-            <view class="line2">你的爱车我来守护～</view>
-        </view>
-        <view class="right">
             <van-image
                     width="160rpx"
                     height="160rpx"
                     fit="cover"
                     round
-                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    src="https://pic4.zhimg.com/80/v2-1b9060e3eadd2dbaac640feaa0135da9_720w.jpg?source=1940ef5c"
             />
         </view>
+        <view class="right">
+            <view class="line1">
+                <text>136****2546</text>
+                <image src="../../static/images/v1.png"></image>
+            </view>
+            <view class="line2">你的爱车我来守护～</view>
+        </view>
+
     </view>
     <view class="order">
         <view class="box">
@@ -37,27 +43,38 @@
         </view>
     </view>
     <view class="out-box">
-        <view class="white" bind:tap="goTo" data-path="/pages/coupon/coupon">
-            <view class="line1">
-                <image src="../../static/images/w1.png"></image>
-                <text>优惠券</text>
-            </view>
-            <view class="line2">
-                <text>0</text>个未使用
-            </view>
-        </view>
         <view class="white" bind:tap="goTo" data-path="/pages/vip-card/vip-card">
             <view class="line1">
                 <image src="../../static/images/w2.png"></image>
                 <text>会员卡</text>
             </view>
             <view class="line2">
-                余额、充值
+                <text class="num">300</text>
+                <text class="text">元余额</text>
+            </view>
+        </view>
+        <view class="white" bind:tap="goTo" data-path="/pages/coupon/coupon">
+            <view class="line1">
+                <image src="../../static/images/w1.png"></image>
+                <text>优惠券</text>
+            </view>
+            <view class="line2">
+                <text class="num">0</text>
+                <text class="text">个未使用</text>
             </view>
         </view>
     </view>
     <view class="menu-items">
         <view class="items">
+            <view class="item">
+                <view class="left">
+                    <image mode="aspectFit" src="../../static/images/m0.png"></image>
+                    <text>质保录入</text>
+                </view>
+                <view class="right">
+                    <image mode="aspectFit" src="../../static/images/more.png"></image>
+                </view>
+            </view>
             <view class="item">
                 <view class="left">
                     <image mode="aspectFit" src="../../static/images/m1.png"></image>

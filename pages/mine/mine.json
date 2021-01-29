@@ -3,6 +3,6 @@
     "van-image": "@vant/weapp/image/index"
   },
   "navigationBarTitleText": "我的",
-  "navigationBarBackgroundColor": "#3373FF",
+  "navigationBarBackgroundColor": "#030505",
   "navigationBarTextStyle": "white"
 }

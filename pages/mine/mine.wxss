@@ -7,12 +7,15 @@
 }
 .page .back-color {
   width: 750rpx;
-  height: 661rpx;
-  background: linear-gradient(#3373FF, #f8f8f8);
+  height: 450rpx;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+}
+.page .back-color image {
+  width: 100%;
+  height: 100%;
 }
 .page .info {
   z-index: 5;
@@ -22,28 +25,38 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .page .info .left {
+  z-index: 5;
+}
+.page .info .right {
+  padding-left: 20rpx;
+  box-sizing: border-box;
   z-index: 5;
   display: flex;
   flex-direction: column;
 }
-.page .info .left .line1 {
-  font-size: 56rpx;
+.page .info .right .line1 {
+  font-size: 46rpx;
   font-weight: bold;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
-.page .info .left .line2 {
+.page .info .right .line1 image {
+  width: 123rpx;
+  height: 39rpx;
+  margin-left: 20rpx;
+}
+.page .info .right .line2 {
   margin-top: 30rpx;
   font-size: 28rpx;
   font-weight: 500;
   color: #FFFFFF;
 }
-.page .info .right {
-  z-index: 5;
-}
 .page .order {
+  margin-top: 50rpx;
   z-index: 5;
   width: 100%;
   padding: 30rpx;
@@ -55,7 +68,7 @@
   width: 100%;
   height: 273rpx;
   background: #FFFFFF !important;
-  border-radius: 24px;
+  border-radius: 24rpx;
   display: flex;
   flex-direction: column;
   padding: 40rpx 30rpx;
@@ -131,10 +144,14 @@
   font-size: 28rpx;
   color: #999999;
 }
-.page .out-box .white .line2 text {
+.page .out-box .white .line2 .num {
   font-size: 32rpx;
   font-weight: 800;
-  color: #FF4040;
+  color: #CBA78C;
+}
+.page .out-box .white .line2 .text {
+  color: #999999;
+  font-size: 24rpx;
 }
 .page .menu-items {
   z-index: 3;

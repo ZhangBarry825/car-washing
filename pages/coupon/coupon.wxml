@@ -1,6 +1,6 @@
 <!--pages/coupon/coupon.wxml-->
 <view class="page">
-    <van-tabs animated sticky active="{{ active }}" bind:change="onChange" color="#3575FF" line-width="44rpx">
+    <van-tabs animated sticky active="{{ active }}" bind:change="onChange" color="#222222" line-width="44rpx">
         <van-tab title="待使用">
             <view class="items">
                 <view class="item item1">

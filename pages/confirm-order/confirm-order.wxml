@@ -1,6 +1,5 @@
 <!--pages/confirm-order/confirm-order.wxml-->
 <view class="page">
-    <view class="back-color"></view>
     <view class="white">
         <view class="box">
             <view class="line1">

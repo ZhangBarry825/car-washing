@@ -30,7 +30,7 @@
   text-align: right;
   font-size: 26rpx;
   font-weight: 500;
-  color: #3575FF;
+  color: #222222;
 }
 .page .items .item .gray {
   color: #333333;
@@ -106,7 +106,7 @@
   color: #666666;
 }
 .page .items .item .line4 .button2 {
-  background: linear-gradient(0deg, #60A3FF 0%, #3373FF 100%);
+  background: #222222;
   color: #ffffff;
   border: none;
 }

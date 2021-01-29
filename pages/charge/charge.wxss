@@ -49,7 +49,7 @@
   margin-top: 60rpx;
   width: 630rpx;
   height: 86rpx;
-  background: linear-gradient(90deg, #60A3FF 0%, #3373FF 100%);
+  background: #000000;
   border-radius: 43rpx;
   display: flex;
   justify-content: center;
